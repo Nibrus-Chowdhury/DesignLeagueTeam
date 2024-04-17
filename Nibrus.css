@@ -19,3 +19,35 @@ h1 {
 h3 {
   font-family: rubik;
 }
+
+/* Initialize */
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::root {
+  --accent-color: #1ea494;
+  --bd-color: #F5F5DC;
+  --sub-font: "georgia", sans-serif;
+  --main-font: rubik;
+  --g-ratio: 1.618;
+}
+
+body {
+  font-family: var(--sub-font);
+  font-weight: 300;
+  background-color: var(--bd-color);
+  color: lightseagreen;
+  font-size: 1.2rem;
+}
+
+hr {
+  margin-top: 0.5rem;
+  width: 70px;
+  height: 5px;
+  background-color: #34495e;
+  border: none;
+}
