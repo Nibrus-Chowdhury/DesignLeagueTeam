@@ -11,15 +11,6 @@
   font-style: normal;
 }
 
-
-h1 {
-  font-family: libre-bodoni;
-}
-
-h3 {
-  font-family: rubik;
-}
-
 /* Initialize */
 
 *, ::before, ::after {
@@ -50,4 +41,13 @@ hr {
   height: 5px;
   background-color: #34495e;
   border: none;
+}
+
+h1, h2, h3, .title{
+  font-family: var(--main-font);
+  font-weight: 900;
+}
+
+.title { 
+  color: var(--accent-color);
 }
