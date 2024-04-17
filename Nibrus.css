@@ -1,3 +1,21 @@
+.rubik-regular {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.libre-bodoni-<uniqui {
+  font-family: "Libre Bodoni", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: libre-bodoni;
+}
+
 h3 {
-  color: blue;
+  font-family: rubik;
 }
