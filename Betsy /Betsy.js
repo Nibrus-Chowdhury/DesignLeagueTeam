@@ -26,8 +26,23 @@ function Ninjas(name, age, height, color) {
     //audio
     conSfx.play();
   
-  
-  
+  const buttton = document.querySelector('#btnCoin');
+    
+  button.style.setProperty('background-color' , '#2ecc71');
+  button.style.setPropery('border-color' , '#2ecc71');
+  button.style.setProperty('color' , 'var(--bg-color)');
+
+  //coin effect 
+    const coinImg = document.createElement('img');
+    coinImg.setAttribute('src' , 'imgs/coin.png');
+    coinImg.setAttribute('id' , 'coin-img');
+    coinImg.style.transform = 'translate(-50%,calc(-100%- ' + ninja.height + 'px)';
+    container.appendChild(coinImg);
+
+    $('#coin-img').animate({ top: '60%' , opacity: 1 }, 250);
+    $('#coin-img').animate({ top: '70%' , opacity: 0 }, 250 ; () => {
+      button.style.setproperty('background-color' , 'transparent');
+    
 
 
 
