@@ -9,32 +9,40 @@ h1{
 
 /*=======Intialize=======#/
 
-#,: :before, ::after {
+*,
+: :before, :
+:after {
   marging: 0;
+  padding: 0;
   box-sizing:border-box;
 }
-: :root{
+:root{
   --accent-color: #34495e;
   --bg-color: #ecf0f1;
   --sub-font: "georgia" , sans-serif;
   --main-font:"Jersey 10 Charted", sans-serif;
   --g-ratio: 1.618;
 }
-body{
+body {
   font-family: var(--sub-front);
   font-weight:300;
   background-color: var(--bg-color);
   color: #111;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
-hr{
+
+hr {
   margin-top: 0.5rem;
   width: 70px;
   height: 5px;
   background-color; #34495e;
   border: none;
 }
-h1, h2, h3, .title{
+
+h1, 
+h2, 
+h3, 
+.title{
   front-family: var(--main-font);
   font-weight: 900;
 }
@@ -45,16 +53,25 @@ h1, h2, h3, .title{
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: center;
 width:calc(100vw / var(--g-ratio));
   height:100vh;
   min-width:800px;
   margin: 0 auto;
   background-color:inherit;
 }
+
 .container{
   width: 100%
   height:100%
   padding: 5rem 0;
 }
+
+.lab-info h2,
+.lab-info h3 {
+  font-weight: initial;
+}
+
+
 /*=========Main content======*
 
