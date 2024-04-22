@@ -100,3 +100,24 @@ lab-info {
   position: relative;
 }
 
+bitton {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color:var(--accent-color);
+  font-size: 2rem;
+  padding: 0.25em 1em;
+}
+
+#btnCoin,
+#btnPipe,
+#btnPowerUp {
+  transition: all ease 100ms;
+  outline: none !important;
+}
+
+img {
+  position: absolute;
+  top: 70%;
+  left:50%;
+  transfrom: translate(-50%, -100%);
+}
