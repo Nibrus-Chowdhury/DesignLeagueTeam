@@ -73,5 +73,30 @@ width:calc(100vw / var(--g-ratio));
 }
 
 
-/*=========Main content======*
+/*Main content
+======*
+.top-container {
+  display: flex;
+  width: 100%;
+}
+
+lab-info {
+  width: 50%;
+}
+
+.content {
+  margin-top: 2rem;
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  border: 2px solid #ccc;
+}
+
+.btns-container {
+  width: 50%;
+  display: felx;
+  justify-content: felx-end;
+  align-items: felx-end;
+  position: relative;
+}
 
