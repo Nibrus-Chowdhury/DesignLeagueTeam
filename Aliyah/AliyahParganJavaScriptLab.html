@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JavaScript Basic</title>
+<link href='https://fonts.googleapis.com/css?family=Jaro' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Jaro';font-size: 22px;
+    background-color:Lavender;
+}
+</style>
+<style>
+#animate{
+	background-color:yellow;
+	width:50px;
+	height:50px;
+	position:absolute;
+}
+#container{
+	background-color:green;
+	width:300px;
+	height:300px;
+	position:relative;
+}
+</style>
+<style>
+button{
+border: 3px double black;
+background-color:black;
+color:white;
+</style>
+<style>
+div{
+background-color:red;
+ width:100px;
+ height:100px;
+}
+</style>
+</head>
+<body>
+
+<h1>JavaScript Output Below</h1>
+<button type="button" onclick="addition()">
+Add 6+5</button>
+
+<button type="button" onclick="subtraction()">
+Subtract 6-5</button>
+
+<button type="button" onclick="multiply()">
+Multiply 6*5</button>
+
+<button type="button" onclick="divide()">
+Divide 6/5</button>
+
+<button type="button" onclick="greet()">
+Greeting</button>
+
+<p id="demo">This will change with javascript</p>
+<div onmousemove="moveFunk(event)" onmouseout="clearCoor"></div>
+
+<button type="button" onclick="moveIt()">moveIt</button>
+<button type="button" onclick="Reset()">Reset</button>
+<button type="button" onclick="otherWay()">otherWay</button>
+<div id="container">
+	<div id="animate"></div>
+</div>
+<script>
+function moveIt(){
+let id = null
+const elem = document.getElementById("animate")
+let pos=0
+clearInterval(id)
+id = setInterval(frame,5)
+function frame(){
+if (pos == 250){
+	clearInterval(id)
+	}
+else{
+pos++
+elem.style.top = pos + "px"
+elem.style.left = pos + "px"
+	}
+	}
+}
+function Reset(){
+let id = null
+const elem = document.getElementById("animate")
+let pos=250
+clearInterval(id)
+id = setInterval(frame,5)
+function frame(){
+if (pos == 250){
+	clearInterval(id)
+	}
+else{
+pos++
+elem.style.top = pos - "px"
+elem.style.left = pos - "px"
+	}
+	}
+}
+function moveFunk(e){
+let x = e.clientX
+let y = e.clientY
+let coor = "Coordinates:(" +x+ "," +y+ ")"
+document.getElementById("demo").innerHTML= coor
+}
+
+function clearCoor(){
+document.getElementById("demo").innerHTML= "  "
+}
+function addition(){
+document.getElementById("demo").innerHTML=6+5
+}
+function subtraction(){
+document.getElementById("demo").innerHTML=6-5
+}
+function multiply(){
+document.getElementById("demo").innerHTML=6*5
+}
+function divide(){
+document.getElementById("demo").innerHTML=6/5
+}
+function greet(){
+document.getElementById("demo").innerHTML="Hello World"
+}
+	
+</script>
+</body>
+</html>
