@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> JavaScript Basic </title>
+  <style>
+  * {
+   color: white;
+   font-family: monospace;
+  }
+  button {
+   background-color: grey;
+   font-size: 20px;
+  }
+  body {
+   background-color: black;
+  }
+  #demo {
+   font-size: 20px;
+  }
+  
+  #animate{
+   background-color: grey;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+  }
+
+  #animate2{
+   background-color: grey;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   bottom: 0;
+  }
+
+  #container{
+   background-color: white;
+   width: 300px;
+   height: 300px;
+   position: relative;
+  }
+  </style>
+</head>
+
+<body>
+
+ <h1> JavasScript Output below </h1>
+
+ <button type="button" onclick="addition()">
+  Add 6+5
+ </button>
+
+ <button type="button" onclick="subtraction()">
+ Subtract 1-25
+ </button>
+
+ <button type="button" onclick="multiplication()">
+ Multiply 7*7
+ </button>
+
+ <button type="button" onclick="division()">
+ Divide 1/9
+ </button>
+
+ <button type="button" onclick="greet()">
+ Greet
+ </button>
+
+ <button type="button" onclick="Reset()">
+ Reset
+ </button>
+
+ <p id="demo">This will change with javascript</p>
+
+ <div onmousemove="moveFunk(event)" onmouseout="clearColor()" style="background-color: white; width: 100px; height: 100px; border: solid; border-color: grey; border-width: 5px;"></div> <br>
+
+ <button type="button" onclick="moveIt()">Animate in \ direction</button> 
+ <button type="button" onclick="moveBack()">Reset \ direction</button>
+ <br>
+ <br>
+ <button type="button" onclick="moveBack2()">Animate in / direction</button> 
+ <button type="button" onclick="moveIt2()">Reset / direction</button>
+ <div id="container">
+  <div id="animate"></div>
+  <div id="animate2"></div>
+ </div>
+
+
+ <script>
+
+  function moveIt(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos = 0
+   clearInterval(id)
+   id = setInterval(frame,5)
+   function frame(){
+    if (pos == 250){
+     clearInterval(id)
+    }
+    else{
+     pos++
+     elem.style.top = pos+"px"
+     elem.style.left = pos+"px"
+    }
+   } 
+  }
+
+ function moveBack(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos = 250
+   clearInterval(id)
+   id = setInterval(frame,5)
+   function frame(){
+    if (pos == 0){
+     clearInterval(id)
+    }
+    else{
+     pos--
+     elem.style.top = pos+"px"
+     elem.style.left = pos+"px"
+    }
+   } 
+  }
+
+  function moveIt2(){
+   let id = null
+   const elem = document.getElementById("animate2")
+   let pos = 0
+   clearInterval(id)
+   id = setInterval(frame,5)
+   function frame(){
+    if (pos == 250){
+     clearInterval(id)
+    }
+    else{
+     pos++
+     elem.style.top = pos+"px"
+     elem.style.right = pos+"px"
+    }
+   } 
+  }
+
+function moveBack2(){
+   let id = null
+   const elem = document.getElementById("animate2")
+   let pos = 250
+   clearInterval(id)
+   id = setInterval(frame,5)
+   function frame(){
+    if (pos == 0){
+     clearInterval(id)
+    }
+    else{
+     pos--
+     elem.style.top = pos+"px"
+     elem.style.right = pos+"px"
+    }
+   } 
+  }
+
+
+  function moveFunk(e){
+   let x = e.clientX
+   let y = e.clientY
+   let coor = "Coordinates: ("+x+","+y+")"
+   document.getElementById("demo").innerHTML = coor
+  }
+  
+  function clearColor(){
+   document.getElementById("demo").innerHTML = "  "
+  }
+
+  function addition(){
+   document.getElementById("demo").innerHTML = 6+5
+  }
+
+  function subtraction(){
+   document.getElementById("demo").innerHTML = 1-25
+  }
+
+  function multiplication(){
+   document.getElementById("demo").innerHTML = 7*7
+  }
+
+  function division(){
+   document.getElementById("demo").innerHTML = 1/9
+  }
+
+  function Reset(){
+   document.getElementById("demo").innerHTML = "This will change with javascript"
+  }
+
+  function greet(){
+   document.getElementById("demo").innerHTML = "Hi, how are you?"
+  }
+
+ </script>
+
+
+
+</body>
+</html>
