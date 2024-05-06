@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JavaScript Basic</title>
+<style>
+div{
+background-color:red;
+width:100px;
+height: 100px;
+}
+
+#animate{
+background-color:yellow;
+width:50px:
+height50px:
+position: absolute;
+}
+
+#container{
+background-color:green;
+width:300px;
+height:300px;
+position:relative;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>javaScript Output below</h1>
+
+<button type="button" onclick="addition()">
+Add 6+5 </button>
+
+<button type="button" onclick="minus()">
+Add 5-5 </button>
+
+<button type="button" onclick="multpuly()">
+multpuly 10x2 </button>
+
+<p id="demo">This will change with javacript</p>
+<div onmousemove="moveFunk(event)" onmouseout="clearColor()"></div>
+<hr>
+<button type="button" onclick="moveIt()">moveIt</button>
+<br>
+<div id="container">
+<div id="animate"></div>
+</div>
+
+<script>
+
+function moveIt(){
+let id = null
+const elem = document.getElementById("animate")
+let pos = 0
+clearInterval(id)
+id=setInterval(frame,5)
+function frame(){ 
+if (pos == 350) {
+clearInterval(id)
+}
+else{
+pos++
+elem.style.top = pos + "px"
+elem.style.left = pos + "px"
+   }
+
+  }
+
+}
+
+
+function moveFunk(e){
+let x = e.clientX
+let y = e.clientY
+let coor ="Coordinates: (" +x+ "," +y+")"
+document.getElementById("demo").innerHTML = coor
+}
+
+function clearColor(){
+document.getElementById("demo").innerHTML= " " 
+
+} 
+
+
+function multpuly(){
+document.getElementById("demo").innerHTML=10*2
+}
+function minus(){
+document.getElementById("demo").innerHTML=5-5
+}
+function addition(){
+document.getElementById("demo").innerHTML=6+5
+}
+
+</script>
+
+</body>
+</html>
