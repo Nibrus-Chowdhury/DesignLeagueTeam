@@ -24,7 +24,7 @@ function Ninjas(name, age, height, color) {
 
   this.coin = () => {
     //audio
-    conSfx.play();
+    coinSfx.play();
   
   const buttton = document.querySelector('#btnCoin');
     
