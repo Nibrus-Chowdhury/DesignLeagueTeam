@@ -60,7 +60,6 @@ Greeting</button>
 
 <button type="button" onclick="moveIt()">moveIt</button>
 <button type="button" onclick="Reset()">Reset</button>
-<button type="button" onclick="otherWay()">otherWay</button>
 <div id="container">
 	<div id="animate"></div>
 </div>
@@ -83,22 +82,21 @@ elem.style.left = pos + "px"
 	}
 }
 function Reset(){
-let id = null
+et id = null
 const elem = document.getElementById("animate")
-let pos=250
+let pos = 250
 clearInterval(id)
 id = setInterval(frame,5)
 function frame(){
-if (pos == 250){
-	clearInterval(id)
-	}
+if (pos == 0){
+clearInterval(id)}
 else{
-pos++
-elem.style.top = pos - "px"
-elem.style.left = pos - "px"
-	}
-	}
+pos--
+elem.style.top = pos+"px"
+elem.style.left = pos+"px"
+}}
 }
+
 function moveFunk(e){
 let x = e.clientX
 let y = e.clientY
