@@ -123,8 +123,8 @@ img {
 }
 
 .floor {
-  width: 100&;
-  height: 30%
+  width: 100%;
+  height: 30%;
   position: absolute;
   bottom: 0;
   background-color: #bbb;
