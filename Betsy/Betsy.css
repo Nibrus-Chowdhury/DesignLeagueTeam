@@ -42,7 +42,7 @@ hr {
 h1, 
 h2, 
 h3, 
-.title{
+.title {
   front-family: var(--main-font);
   font-weight: 900;
 }
