@@ -18,7 +18,7 @@ h2{
 
 :root {
   --accent-color: #1ea494;
-  --bd-color: #F5F5DC;
+  --bd-color: #DDA0DD;
   --sub-font: "georgia", sans-serif;
   --main-font: rubik;
   --g-ratio: 1.618;
@@ -28,7 +28,7 @@ body {
   font-family: var(--sub-font);
   font-weight: 300;
   background-color: var(--bd-color);
-  color: lightseagreen;
+  color: indigo;
   font-size: 1.2rem;
 }
 
