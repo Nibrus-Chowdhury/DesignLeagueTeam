@@ -3,8 +3,33 @@ html {
   width: 100%;
 }
 
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  height: 100%;
+  border: 2px solid black;
+  width: 99%;
+  display: grid;
+  grid: 
+    "slides" 1fr
+    "game" 1fr
+    / 1fr;
+  gap: 5px;
+}
+
 .slides {
-  position: absolute;
-  left: 5px;
-  width: 50%;
+  grid-area: slides;
+  margin: 5px;
+  border: solid;
+  border-color: red;
+}
+
+.game {
+  grid-area: game;
+  margin: 5px;
+  border: solid;
+  border-color: red;
 }

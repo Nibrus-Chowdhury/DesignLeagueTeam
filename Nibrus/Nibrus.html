@@ -1,53 +1,66 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-  <link rel="stylesheet" type="text/css" href="Nibrus.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js&quot; integrity="
-    sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous"></script>
-
   <meta charset="UTF-8">
-  <meta http-equiv="U-UA-Compatible" content="IE-edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title> Nibrus Chowdhury </title>
-
+  <title>Nibrus</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Nibrus.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js&quot; integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
+<body style="overflow: hidden !important;">
+    <div class="loader">
+        <div class="loader-container">
+            <svg height="224px" width="224px">
+                <rect class="animate" height="224px" width="224px"/>
+            </svg>
+            <div class="box">
+                <div class="box__1"></div>
+                <div class="box__2"></div> 
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
 
-<body>
-  <!-- name, role, why is this subject important to you? What did you do for your team? Insert images of figma work here -->
-  <h1>Nibrus Chowdhury</h1>
-  <h3>Coder</h3>
-  <br>
-  <h4> Why is this subject important to me? </h4>
-  <p> This subject is important to me because my future career </p>
-  <h4> What are my contributions? </h4>
-  <p></p>
-<br>
-<br>
-  <div class="wrapper">
-    <div class="container">
-      <div class="top-container">
-        <div class="lab-info">
-          <h3>Date</h3>
-          <h3> Lab Avatar and sound JS </h3>
+            <!-- Lab Info -->
+            <div class="top-container">
+                <div class="lab-info">
+                    <h1>Ninja Game</h1>
+                    <h3>5/6/2024</h3>
+                    <h3>Nibrus Chowdhury</h3>
+                    <hr>
+                </div>
+                <div class="btns-container">
+                    <button onclick="promptUser()">New</button>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+
+
+            </div>
+
         </div>
-        <div class="btns-container">
-          <button onclick="promptUser()">New Avatar</button>
-        </div>
-      </div>
-      <!-- Content -->
-      <div class="content">
-      </div>
+    </div>
+  
+  <script src="Nibrus.js">
+  </script>
+  
+<div class="loader">
+  <div class="loader-container">
+    <svg height="224px" width="224px">
+      <rect class="animate" height="224px" width="224px"/>
+    </svg>
+    <div class="box">
+      <div class="box__1"></div>
+      <div class="box__2"></div>
     </div>
   </div>
+</div>
 </body>
-
 </html>
