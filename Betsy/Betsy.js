@@ -110,19 +110,19 @@ this.appendImg = () => {
   }
 };
 
-  this.changeBtns => {
+  this.changeBtns = () => {
     const btn = document.querySeletor('button');
     const btnContainer = document.querySelector('.btns-container');
     btnContainer.removeChild(btn);
     btnContainer.innerHTML =
-      "<button onclik='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()'id='btnPipe'>pipe</button> \n button onclick='ninja.powerUp'() id='btnPowerUp'>Power Up</button>"; 
+      "<button onclik='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()'id='btnPipe'>Pipe</button> \n button onclick='ninja.powerUp'() id='btnPowerUp'>Power Up</button>"; 
 const newBtns = document.querySelectorAll('button');
   for (let i  = 0; i < newBtns.length; i++) {
     newBtns[i].style.setProperty('margin-Ieft' , '1.5erm');
   }
     
 // Add floor 
-    const floor =document.createElement('div');
+    const floor = document.createElement('div');
     floor.setAttribute('class' , 'floor');
     contaainer.appendChild(floor);
     floor.innHTML =
