@@ -141,7 +141,7 @@ this.getAge();
 this.getHeight();
 this.getColor();
 
-ninja = new Nonjas(name, age, height, color);
+ninja = new Ninjas(name, age, height, color);
 
 this.appendImg();
 this.changeBtns();
