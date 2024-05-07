@@ -93,18 +93,18 @@ const promptUser = () => {
   };
 
   this.appendImg = () => {
-    img = document.createElement('img');
+    img = document.createElement('IMG');
     let size = 'width:' + height + 'px;height:' + height + 'px;';
     if (color === 'blue') {
-      img.setAttribute('src', 'img/ninja1.png');
+      img.setAttribute('src', 'IMG/ninja1.png');
       img.setAttribute('style', size);
       container.appendChild(img);
     } else if (color === 'green') {
-      img.setAttribute('src', 'img/ninja2.png');
+      img.setAttribute('src', 'IMG/ninja2.png');
       img.setAttribute('style', size);
       container.appendChild(img);
     } else if (color === 'red') {
-      img.setAttribute('src', 'img/ninja3.png');
+      img.setAttribute('src', 'IMG/ninja3.png');
       img.setAttribute('style', size);
       container.appendChild(img);
     }
