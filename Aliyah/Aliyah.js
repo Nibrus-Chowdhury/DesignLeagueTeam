@@ -1,10 +1,10 @@
-const coinSfx = new Sfx('sfx/Mario Coin.wav');
-const pipeSfx = new Sfx('sfx/Mario Pipe.wav');
-const powerUpSfx = new Sfx('sfx/Mario Powerup.wav');
+const coinSfx = new sfx('sfx/Mario Coin.wav');
+const pipeSfx = new sfx('sfx/Mario Pipe.wav');
+const powerUpSfx = new sfx('sfx/Mario Powerup.wav');
 const container = document.querySelector('.content');
 let ninja;
 
-function Sfx(src) {
+function sfx(src) {
   this.sound = document.createElement('audio');
   this.sound.src = src;
   this.sound.setAttribute('preload', 'auto');
@@ -34,7 +34,7 @@ function Ninjas(name, age, height, color) {
 
     //coin effect
     const coinImg = document.createElement('img');
-    coinImg.setAttribute('src', 'img/coin.png');
+    coinImg.setAttribute('src', 'IMG/coin.png');
     coinImg.setAttribute('id', 'coin-img');
     coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px)';
     container.appendChild(coinImg);
